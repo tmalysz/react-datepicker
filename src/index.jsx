@@ -983,6 +983,12 @@ export default class DatePicker extends React.Component {
       [outsideClickIgnoreClass]: this.state.open,
     });
 
+    console.log("RD:renderDateInput()", {
+      "this.props.value": this.props.value,
+      "this.state.inputValue": this.state.inputValue,
+      "this.props.selected": this.props.selected,
+    });
+
     const customInput = this.props.customInput || <input type="text" />;
     const customInputRef = this.props.customInputRef || "ref";
     const inputValue =
